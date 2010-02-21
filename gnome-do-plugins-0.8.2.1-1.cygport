@@ -1,0 +1,10 @@
+inherit mono
+
+DESCRIPTION="Intelligent task launcher (plugins)"
+HOMEPAGE="http://do.davebsd.com/"
+SRC_URI="http://edge.launchpad.net/do-plugins/${PV[1]}.${PV[2]}/${PV}/+download/${P}.tar.gz"
+
+DIFF_EXCLUDES="*.addin.xml"
+
+CYGCONF_ARGS="--enable-release"
+MAKEOPTS+=" -j1"
