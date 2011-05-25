@@ -1,20 +1,3 @@
---- origsrc/gnome-do-plugins-0.8.2.1/BundledLibraries/Makefile.am	2009-10-12 15:30:04.258393700 -0500
-+++ src/gnome-do-plugins-0.8.2.1/BundledLibraries/Makefile.am	2010-01-04 20:40:43.694953300 -0600
-@@ -1,5 +1,7 @@
- bundledir = ${libdir}/gnome-do/plugins
- 
-+if HAVE_BANSHEE
-+
- install-data-hook:
- 	$(INSTALL) -d $(DESTDIR)/$(bundledir)
- 	$(INSTALL) -m 644 -t $(DESTDIR)/$(bundledir) $(BANSHEE_INDEXER_DLL)
-@@ -7,4 +9,6 @@ install-data-hook:
- uninstall-hook:
- 	rm $(DESTDIR)/$(bundledir)/$(notdir $(BANSHEE_INDEXER_DLL))
- 
-+endif
-+
- EXTRA_DIST= gmcs.exe 
 --- origsrc/gnome-do-plugins-0.8.2.1/build.rules.mk	2009-10-12 15:30:04.348394200 -0500
 +++ src/gnome-do-plugins-0.8.2.1/build.rules.mk	2010-01-04 20:49:30.089061300 -0600
 @@ -26,9 +26,10 @@ MA_ADDIN_VER = $(shell egrep -o -m 1 've
