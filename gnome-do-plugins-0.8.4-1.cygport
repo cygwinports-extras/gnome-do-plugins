@@ -3,7 +3,6 @@ inherit mono
 DESCRIPTION="Intelligent task launcher (plugins)"
 HOMEPAGE="http://do.davebsd.com/"
 SRC_URI="http://launchpad.net/do-plugins/trunk/${PV%.${PV[4]}}/+download/${P}.tar.gz"
-PATCH_URI="0.8.2-build.patch"
 
 DIFF_EXCLUDES="*.addin.xml"
 

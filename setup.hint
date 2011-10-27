@@ -1,5 +1,5 @@
 category: X11
-requires: gnome-do mono mono-FlickrNet2.2 mono-gconf-sharp2.0 mono-glib-sharp2.0 mono-gnome-vfs-sharp2.0 mono-Google-GData1.4 mono-gtk-sharp2.0 mono-NDesk-DBus-GLib1.0 mono-NDesk-DBus1.0 mono-pango-sharp2.0 mono-wnck-sharp2.20
+requires: gnome-do mono mono-dbus-sharp1.0 mono-FlickrNet2.2 mono-gconf-sharp2.0 mono-glib-sharp2.0 mono-gnome-vfs-sharp2.0 mono-Google-GData1.4 mono-gtk-sharp2.0 mono-Mono-Addins0.2 mono-NDesk-DBus-GLib1.0 mono-NDesk-DBus1.0 mono-pango-sharp2.0 mono-wnck-sharp2.20
 sdesc: "Search-based launcher (plugins)"
 ldesc: "Do is an intelligent launcher tool that makes performing common 
 tasks on your computer simple and efficient. Do not only allows you to 
